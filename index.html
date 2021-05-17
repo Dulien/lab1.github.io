@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-family:verdana">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <div>Hey</div>
+    <title>Questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
+    <div class="top">
+        <h1>
+            UI Design Questionnaire for EverAssistant
+        </h1>
+        <p>
+            Please refer to the following website and fill out the questionnaire regarding this sites design.<br>
+            <a href="https://everassistant.io/">EverAssistant</a>
+        </p>
+        <p>
+            <img src="screenshot.jpg" width="950" height="467">
+        </p>
+    </div>
+
+    <div class="questionnaire">
+        <form name="form">
+
+            <div class="question">
+                <strong>What program are you currently enrolled in?</strong><br><br>
+                Program Name: <input type="text" name="firstname">
+            </div>
+
+            <div class="question">
+                <strong>Do you like the design of the EverAssistant webpage?</strong><br><br>
+                <input type="radio" id="yes" name="yesno" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="yesno" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <div class="question">
+                <strong>Select which of the following properties apply.</strong><br><br>
+                <i>This website is:</i><br>
+                <input type="checkbox" id="consistent" value="consistent">
+                <label for="consistent"> Consistent</label><br>
+                <input type="checkbox" id="efficient" value="efficient">
+                <label for="efficient"> Efficient</label><br>
+                <input type="checkbox" id="reliable" value="reliable">
+                <label for="reliable"> Reliable</label><br>
+                <input type="checkbox" id="functional" value="functional">
+                <label for="functional"> Functional</label><br>
+            </div>
+
+            <div class="question">
+                <strong>Was the EverAssistant webpage easy to navigate?</strong><br><br>
+                Very difficult
+                <input type="radio" name="nav" value="1">
+                <input type="radio" name="nav" value="2">
+                <input type="radio" name="nav" value="3">
+                <input type="radio" name="nav" value="4">
+                <input type="radio" name="nav" value="5">
+                Very easy
+            </div>
+
+            <div class="question">
+                <strong>Please leave any comments/suggestions in the following text box</strong><br><br>
+                <textarea id="w3review" name="w3review" rows="5" cols="50"></textarea>
+            </div>
+
+            <div class="container">
+                <input type="submit" value="Submit"/>
+            </div>
+
+            
+
+
+        </form>
+    </div>
+
+    <footer>
+        <p>Author: Dulien</p>
+        <p><a href="mailto:jmart289@uottawa.ca">jmart289@uottawa.ca</a></p>
+    </footer>
 </body>
+
 </html>
